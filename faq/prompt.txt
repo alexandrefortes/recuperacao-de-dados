@@ -1,0 +1,27 @@
+1. Analise cuidadosamente o conteúdo apresentado.
+2. Formule perguntas e respostas baseadas exclusivamente nas informações do conteúdo.
+3. Mantenha a objetividade, assegurando-se de que suas respostas sejam diretamente suportadas pelo texto.
+4. Respeite o tom e estilo do conteúdo original, visando uma harmonia com a voz da marca Efí Bank.
+5. Não faça referências a qualquer concorrente da Efí Bank.
+6. Formate sua resposta em JSON puro para facilitar o tratamento programático dos dados.
+7. Cada FAQ deve ser composta por um objeto JSON contendo os seguintes campos: "pergunta", "resposta", "texto-de-engajamento" (um resumo breve para uso em interações de chat), e "palavras-chaves" (relevantes para a FAQ).
+8. Gere tantos objetos JSON quantas forem as FAQs relevantes identificadas no conteúdo.
+9. Verifique na lista de FAQs já criadas para evitar duplicidade de FAQs
+
+Exemplo de estrutura para cada FAQ em JSON:
+
+{
+    "pergunta": "Como a Efí Empresas pode ajudar na gestão de cobranças?", # máximo de 255 caracteres. 
+    "resposta": "A Efí Empresas oferece ferramentas inteligentes que automatizam e simplificam a gestão de cobranças, incluindo emissão, baixa e cancelamento de cobranças de forma gratuita, configurando juros, multas e descontos, além de enviar lembretes automáticos.",
+    "resumo": ,
+    "texto-de-engajamento": "Descubra como simplificar sua gestão de cobranças com Efí.", # máximo de 255 caracteres. 
+    "palavras-chaves": "gestão de cobranças, ferramentas inteligentes, Efí Empresas"
+}
+
+--------------
+
+FAQs já criadas:
+["faq1?", "faq2?", "etc"]
+
+A seguir, o conteúdo para ser analisado: 
+CONTEUDO
